@@ -8,6 +8,10 @@ public class Enemy : MonoBehaviour
     public float health = 20f;
     float currentHealth;
 
+    public GameObject healthBarPrefab;
+    GameObject healthBar;
+    
+
     void Awake()
     {
         currentHealth = health;
