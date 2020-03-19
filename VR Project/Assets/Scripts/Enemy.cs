@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour
 
     public Transform currentWaypoint;
     public float moveSpeed = 2f;
+
+    public float damage = 5f;
     
 
     void Awake()
