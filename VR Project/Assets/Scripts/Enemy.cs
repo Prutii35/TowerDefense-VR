@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     void Awake()
     {
         currentHealth = health;
-        healthBar = Instantiate(healthBarPrefab, transform.position + new Vector3(0,0.5f,0.25f),Quaternion.identity, transform);
+        healthBar = Instantiate(healthBarPrefab, transform.position + new Vector3(0,1f,0.25f),Quaternion.identity, transform);
     }
 
     void Update()

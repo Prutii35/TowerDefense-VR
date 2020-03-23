@@ -9,6 +9,8 @@ public class PurchaseSpace : MonoBehaviour
     public Text moneyText;
 
     public GameObject basicTowerPrefab;
+    public GameObject cannonTowerPrefab;
+    public GameObject ironTower;
     GameObject boughtTower;
 
     void Update()
@@ -30,7 +32,6 @@ public class PurchaseSpace : MonoBehaviour
 
     public void BuyBasicTower()
     {
-        Debug.Log("aloooooooooooo");
         //check if u have enough money, check if u bought a tower
         if(Money.Amount < 40 || boughtTower != null){
             return;
@@ -46,7 +47,44 @@ public class PurchaseSpace : MonoBehaviour
 
         //take away moeny
         Money.Amount -= 40;
+    }
 
+     public void BuyCannonTower()
+    {
+        //check if u have enough money, check if u bought a tower
+        if(Money.Amount < 40 || boughtTower != null){
+            return;
+        }
+
+        // spawn a tower
+        boughtTower =  Instantiate(cannonTowerPrefab, transform.position, Quaternion.identity);
+
+        // make tower transparent
+        Color color =  boughtTower.GetComponent<Renderer>().material.color;
+        color.a = 0.5f;
+        boughtTower.GetComponent<Renderer>().material.color = color;
+
+        //take away moeny
+        Money.Amount -= 40;
+    }
+
+      public void BuyIronTower()
+    {
+        //check if u have enough money, check if u bought a tower
+        if(Money.Amount < 40 || boughtTower != null){
+            return;
+        }
+
+        // spawn a tower
+        boughtTower =  Instantiate(ironTower, transform.position, Quaternion.identity);
+
+        // make tower transparent
+        Color color =  boughtTower.GetComponent<Renderer>().material.color;
+        color.a = 0.5f;
+        boughtTower.GetComponent<Renderer>().material.color = color;
+
+        //take away moeny
+        Money.Amount -= 40;
     }
 
     void checkForWall()
