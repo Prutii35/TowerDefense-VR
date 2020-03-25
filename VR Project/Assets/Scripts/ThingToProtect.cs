@@ -13,7 +13,7 @@ public class ThingToProtect : MonoBehaviour
     void Awake()
     {
         currentHealth = health;
-        healthBar = Instantiate(healthBarPrefab, transform.position + new Vector3(0,1.8f,0.1f),Quaternion.identity, transform);
+        healthBar = Instantiate(healthBarPrefab, transform.position + new Vector3(0,5f,0.1f),Quaternion.identity, transform);
     }
     void OnTriggerEnter(Collider other)
     {

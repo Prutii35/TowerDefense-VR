@@ -84,8 +84,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db43e32dd5c25e4eb718da0999a3cf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
-  fireRate: 1
+  range: 6
+  fireRate: 2
   bulletPrefab: {fileID: 3785861674836316560, guid: 51e7156a1c9e3c94a88fe502a052e612,
     type: 3}
   barrelExit: {fileID: 2937773327789353926}

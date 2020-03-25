@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 7769435095435234369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.728079, y: 0.303606, z: -0.3606379}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 7769435096284481205}
   - {fileID: 7769435096205079631}
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 10
-  fireRate: 1
+  fireRate: 3
   bulletPrefab: {fileID: 3785861674836316560, guid: 51e7156a1c9e3c94a88fe502a052e612,
     type: 3}
   barrelExit: {fileID: 7769435096565449039}
