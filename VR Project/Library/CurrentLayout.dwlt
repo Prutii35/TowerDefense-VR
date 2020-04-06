@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 73
+  controlID: 12
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 74
+  controlID: 13
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 75
+  controlID: 14
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,9 +294,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 522
+    x: 499
     y: 73
-    width: 835
+    width: 894
     height: 572
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
@@ -337,19 +337,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Towers
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 40
   m_LastFolders:
-  - Assets/Prefabs/Towers
+  - Assets/Prefabs
   m_LastFoldersGridSize: 40
   m_LastProjectPath: D:\Unity\Project\VR Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 438}
-    m_SelectedIDs: aa2a0000
-    m_LastClickedID: 10922
+    m_SelectedIDs: 3e2d0000
+    m_LastClickedID: 11582
     m_ExpandedIDs: 0000000082280000ec2900001c2a0000dc2b0000022c00008a2c00003e2d0000c42e0000b0310000ba310000f4310000a23200008a340000ec340000424300004443000046430000484300004a4300004c4300004e4300005043000052430000544300005643000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -496,24 +496,24 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: defbffff
+      scrollPos: {x: 0, y: 3349}
+      m_SelectedIDs: 2ef7ffff
+      m_LastClickedID: -2258
+      m_ExpandedIDs: 308dffffd48effff4c90ffffca99ffffbe9afffff8a2ffffaca5ffff02b5ffffdcb7ffff5ed1fffffad1ffff1cdbffffeadeffffcce3ffffe0e4ffffb6efffffbaefffff7ef5ffff82f5ffffdefbffff023900003c3900008e3a0000043c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: '[Waypoints]'
+        m_OriginalName: '[Waypoints]'
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 15364
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -555,9 +555,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 25.86225, y: 9.429624, z: -3.023007}
+    m_Target: {x: 35.93938, y: 0.1051445, z: -15.608988}
     speed: 2
-    m_Value: {x: 25.86225, y: 9.429624, z: -3.023007}
+    m_Value: {x: 35.93938, y: 0.1051445, z: -15.608988}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -585,13 +585,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.11122287, y: -0.87411565, z: 0.23804232, w: -0.40851828}
+    m_Target: {x: -0.7023651, y: -0.0125200795, z: 0.012389306, w: -0.71159893}
     speed: 2
-    m_Value: {x: -0.11122287, y: -0.87411565, z: 0.23804232, w: -0.40851828}
+    m_Value: {x: -0.7023651, y: -0.0125200795, z: 0.012389306, w: -0.71159893}
   m_Size:
-    m_Target: 0.53535545
+    m_Target: 38.318928
     speed: 2
-    m_Value: 0.53535545
+    m_Value: 38.318928
   m_Ortho:
     m_Target: 0
     speed: 2
