@@ -41,10 +41,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3f95297a62c9f49a7f04e403b0920e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 20
   healthBarPrefab: {fileID: 8785111895388094457, guid: 9ee7f4442ebe741449a71a74cf4f1f76,
     type: 3}
-  worth: 4
+  worth: 20
   currentWaypoint: {fileID: 0}
   moveSpeed: 2
   damage: 5
