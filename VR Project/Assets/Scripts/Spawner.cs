@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Spawner : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class Spawner : MonoBehaviour
 
     int randomPath;
 
-    public Text waveTest;
+    public TextMeshPro waveText;
 
     float extraSpeed = 0f;
     float extraHealth = 0f;
@@ -220,7 +221,7 @@ public class Spawner : MonoBehaviour
                 Debug.Log("Upgraded stats.");
             }
 
-            waveTest.text = "Wave " + (currentWave + 1) + "/" + waves.Count;
+            waveText.text = "Wave " + (currentWave + 1) + " / " + waves.Count;
 
             //start the wave and wait to finish
             yield return StartCoroutine(startNextWave());

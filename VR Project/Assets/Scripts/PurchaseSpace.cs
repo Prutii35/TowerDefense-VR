@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class PurchaseSpace : MonoBehaviour
 {
 
-    public Text moneyText;
+    public TextMeshPro moneyText;
+    public TextMeshPro scoreText;
 
     public GameObject basicTowerPrefab;
     public GameObject cannonTowerPrefab;
@@ -18,6 +19,7 @@ public class PurchaseSpace : MonoBehaviour
     void Update()
     {
         moneyText.text = "Money $" + Money.Amount;
+        scoreText.text = "" + Score.Amount;
 
         if(boughtTower != null)
         {
