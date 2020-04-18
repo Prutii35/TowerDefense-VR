@@ -8,6 +8,8 @@ public class ThingToProtect : MonoBehaviour
     public float health = 100f;
     float currentHealth;
 
+    public RectTransform gameOverPanel;
+
     public GameObject healthBarPrefab;
     GameObject healthBar;
     void Awake()
@@ -41,6 +43,8 @@ public class ThingToProtect : MonoBehaviour
         if(currentHealth <= 0)
         {
             Destroy(gameObject);
+            gameOverPanel.gameObject.SetActive(true);
+            Time.timeScale = 0.0f;
         }
     }
 }

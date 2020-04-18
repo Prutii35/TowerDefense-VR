@@ -37,7 +37,7 @@ public class PurchaseSpace : MonoBehaviour
     public void BuyBasicTower()
     {
         //check if u have enough money, check if u bought a tower
-        if(Money.Amount < 40 || boughtTower != null){
+        if(Money.Amount < 30 || boughtTower != null){
             return;
         }
 
@@ -94,7 +94,7 @@ public class PurchaseSpace : MonoBehaviour
       public void BuyLittleCannonTower()
     {
         //check if u have enough money, check if u bought a tower
-        if(Money.Amount < 40 || boughtTower != null){
+        if(Money.Amount < 20 || boughtTower != null){
             return;
         }
 

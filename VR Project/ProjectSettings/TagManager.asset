@@ -18,7 +18,7 @@ TagManager:
   - 
   - PostProcessing
   - Enemy
-  - 
+  - Menu Background
   - 
   - 
   - 
@@ -43,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1175250439
+    locked: 0
+  - name: UI
+    uniqueID: 2775087037
     locked: 0
