@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     GameObject healthBar;
 
     public float worth = 4f;
+    public float score;
 
     public Transform currentWaypoint;
     public float moveSpeed;
@@ -53,6 +54,7 @@ public class Enemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Money.Amount += worth;
+            Score.Amount += score;
             Destroy(gameObject);
         }
 
