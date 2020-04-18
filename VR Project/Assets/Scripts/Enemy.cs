@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 
-    public float health = 30f;
+    public float health;
     float currentHealth;
 
     public GameObject healthBarPrefab;
@@ -14,15 +14,20 @@ public class Enemy : MonoBehaviour
     public float worth = 4f;
 
     public Transform currentWaypoint;
-    public float moveSpeed = 2f;
+    public float moveSpeed;
 
     public float damage = 5f;
     
 
     void Awake()
     {
+        
+    }
+
+    void setHealthBar()
+    {
         currentHealth = health;
-        healthBar = Instantiate(healthBarPrefab, transform.position + new Vector3(0,1f,0.25f),Quaternion.identity, transform);
+        healthBar = Instantiate(healthBarPrefab, transform.position + new Vector3(0, 1f, 0.25f), Quaternion.identity, transform);
     }
 
     void Update()

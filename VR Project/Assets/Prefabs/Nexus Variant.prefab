@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  healthBarPrefab: {fileID: 8785111895388094457, guid: 9ee7f4442ebe741449a71a74cf4f1f76,
+  healthBarPrefab: {fileID: 8785111895388094457, guid: cbab4d4fafd420847ace87db45fabdc2,
     type: 3}
 --- !u!1001 &311663357450360296
 PrefabInstance:

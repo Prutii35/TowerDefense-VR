@@ -13,14 +13,35 @@ public class Tower : MonoBehaviour
     Transform target;
     float fireCounter = 0;
 
+    bool stillInRange = false;
+
     void Update() 
     {
+        
         findNextTarget();
-
-        if(target != null)
+        
+        if (target != null)
         {
             aimAtTarget();
             shoot();
+
+            //check who is in range
+            int layerMask = 1 << 9;
+            Collider[] enemies = Physics.OverlapSphere(transform.position, range, layerMask);
+
+            if (enemies.Length > 0)
+            {
+                stillInRange = false;
+                foreach (Collider enemy in enemies)
+                {
+                    if (target == enemy) stillInRange = true;
+                }
+
+                if (stillInRange == false)
+                {
+                    target = null;
+                }
+            }
         }
     }
 
