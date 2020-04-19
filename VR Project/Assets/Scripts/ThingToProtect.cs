@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ThingToProtect : MonoBehaviour
@@ -7,6 +8,9 @@ public class ThingToProtect : MonoBehaviour
 
     public float health = 100f;
     float currentHealth;
+
+    public RectTransform gameOverPanel;
+    public TextMeshPro scoreText;
 
     public GameObject healthBarPrefab;
     GameObject healthBar;
@@ -41,6 +45,9 @@ public class ThingToProtect : MonoBehaviour
         if(currentHealth <= 0)
         {
             Destroy(gameObject);
+            scoreText.text = "Score : " + Score.Amount;
+            gameOverPanel.gameObject.SetActive(true);
+            Time.timeScale = 0.0f;
         }
     }
 }
