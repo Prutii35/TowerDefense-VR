@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.237
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.3265984, g: 0.32798997, b: 0.31955412, a: 0.237}
+  m_IndirectSpecularColor: {r: 0.3265909, g: 0.32797307, b: 0.31945908, a: 0.237}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -29696,11 +29696,6 @@ PrefabInstance:
       objectReference: {fileID: 979406358}
     - target: {fileID: 45264659039183070, guid: d81605ef76b49ac4e86065981808adbd,
         type: 3}
-      propertyPath: health
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 45264659039183070, guid: d81605ef76b49ac4e86065981808adbd,
-        type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 389602181}
@@ -34041,7 +34036,7 @@ PrefabInstance:
     - target: {fileID: 2000675401828090663, guid: 74cc1023d50861346b034229120b1f8a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.19
+      value: 18.38
       objectReference: {fileID: 0}
     - target: {fileID: 2000675401828090663, guid: 74cc1023d50861346b034229120b1f8a,
         type: 3}
@@ -43083,7 +43078,7 @@ PrefabInstance:
     - target: {fileID: 2000675401828090663, guid: 74cc1023d50861346b034229120b1f8a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.19
+      value: 18.18
       objectReference: {fileID: 0}
     - target: {fileID: 2000675401828090663, guid: 74cc1023d50861346b034229120b1f8a,
         type: 3}
@@ -52691,7 +52686,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182626267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.718, y: 0, z: 12.03}
+  m_LocalPosition: {x: 27.718, y: 0, z: 18.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 590191759}
@@ -81732,7 +81727,7 @@ PrefabInstance:
     - target: {fileID: 2000675401828090663, guid: 74cc1023d50861346b034229120b1f8a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.19
+      value: 18.27
       objectReference: {fileID: 0}
     - target: {fileID: 2000675401828090663, guid: 74cc1023d50861346b034229120b1f8a,
         type: 3}
@@ -83180,7 +83175,7 @@ PrefabInstance:
     - target: {fileID: 2000675401828090663, guid: 74cc1023d50861346b034229120b1f8a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.19
+      value: 18.31
       objectReference: {fileID: 0}
     - target: {fileID: 2000675401828090663, guid: 74cc1023d50861346b034229120b1f8a,
         type: 3}
@@ -90943,7 +90938,7 @@ PrefabInstance:
     - target: {fileID: 2000675401828090663, guid: 74cc1023d50861346b034229120b1f8a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.19
+      value: 18.29
       objectReference: {fileID: 0}
     - target: {fileID: 2000675401828090663, guid: 74cc1023d50861346b034229120b1f8a,
         type: 3}
@@ -92168,6 +92163,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825348846136060542, guid: 1f6113e4f28828246bd3221ee5c2a838,
+        type: 3}
+      propertyPath: m_text
+      value: 'Buy Small Cannon
+
+        $20'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825348846136060542, guid: 1f6113e4f28828246bd3221ee5c2a838,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6851286292605814674, guid: 1f6113e4f28828246bd3221ee5c2a838,
         type: 3}

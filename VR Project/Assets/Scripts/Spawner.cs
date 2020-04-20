@@ -186,7 +186,7 @@ public class Spawner : MonoBehaviour
             }
             else //path 5
             {
-                Debug.Log("Path 4.");
+                Debug.Log("Path 5.");
                 firstWaypoint = pathStart5;
 
                 if (pPath5 < 0.20f)
@@ -214,10 +214,10 @@ public class Spawner : MonoBehaviour
             //increase wave counter
             currentWave++;
 
-            if(currentWave % 3 == 0 && currentWave != 0)
+            if(currentWave != 0)
             {
-                extraSpeed += 0.5f;
-                extraHealth += 20f;
+                extraSpeed += 0.1f;
+                extraHealth += 3.5f;
                 Debug.Log("Upgraded stats.");
             }
 

@@ -50,7 +50,7 @@ public class PurchaseSpace : MonoBehaviour
         boughtTower.GetComponent<Renderer>().material.color = color;
 
         //take away moeny
-        Money.Amount -= 40;
+        Money.Amount -= 30;
     }
 
      public void BuyCannonTower()
@@ -107,13 +107,13 @@ public class PurchaseSpace : MonoBehaviour
         boughtTower.GetComponent<Renderer>().material.color = color;
 
         //take away moeny
-        Money.Amount -= 40;
+        Money.Amount -= 20;
     }
 
       public void BuyMediumCannonTower()
     {
         //check if u have enough money, check if u bought a tower
-        if(Money.Amount < 40 || boughtTower != null){
+        if(Money.Amount < 30 || boughtTower != null){
             return;
         }
 
@@ -126,7 +126,7 @@ public class PurchaseSpace : MonoBehaviour
         boughtTower.GetComponent<Renderer>().material.color = color;
 
         //take away moeny
-        Money.Amount -= 40;
+        Money.Amount -= 30;
     }
 
     void checkForWall()
