@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
-    public float range = 3f;
+    public float range;
     public float fireRate = 1f;
 
     public GameObject bulletPrefab;
@@ -15,13 +15,28 @@ public class Tower : MonoBehaviour
 
     bool stillInRange = false;
 
+    public int segments = 100;
+    LineRenderer line;
+
+    void Awake()
+    {
+        line = gameObject.GetComponent<LineRenderer>();
+
+        line.SetVertexCount(segments + 1);
+        line.useWorldSpace = false;
+        CreatePoints();
+
+    }
+
     void Update() 
     {
         
         findNextTarget();
         
+
         if (target != null)
         {
+            stillInRange = false;
             aimAtTarget();
             shoot();
 
@@ -42,6 +57,44 @@ public class Tower : MonoBehaviour
                     target = null;
                 }
             }
+        }
+    }
+
+    void CreatePoints()
+    {
+        float x;
+        float y;
+        float z;
+
+        float angle = 20f;
+
+        for (int i = 0; i < (segments + 1); i++)
+        {
+            if(gameObject.tag == "ScoutTower")
+            {
+                x = Mathf.Sin(Mathf.Deg2Rad * angle) * (range * 3.5f + 3);
+                y = Mathf.Cos(Mathf.Deg2Rad * angle) * (range * 3.5f + 3);
+            }
+            else if(gameObject.tag == "BigCannon")
+            {
+                x = Mathf.Sin(Mathf.Deg2Rad * angle) * (range + 5);
+                y = Mathf.Cos(Mathf.Deg2Rad * angle) * (range + 5);
+            }
+            else if (gameObject.tag == "SmallCannon")
+            {
+                x = Mathf.Sin(Mathf.Deg2Rad * angle) * (range + 2.5f);
+                y = Mathf.Cos(Mathf.Deg2Rad * angle) * (range + 2.5f);
+            }
+            else // Cannon Tower
+            {
+                x = Mathf.Sin(Mathf.Deg2Rad * angle) * (range + 12);
+                y = Mathf.Cos(Mathf.Deg2Rad * angle) * (range + 12);
+            }
+
+            Vector3 vector = Quaternion.Euler(90, 0, 0) * new Vector3(x, y, 0) ;
+            line.SetPosition(i, vector);
+
+            angle += (360f / segments);
         }
     }
 

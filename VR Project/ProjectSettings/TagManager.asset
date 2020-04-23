@@ -7,6 +7,10 @@ TagManager:
   - Ground
   - Wall
   - Enemy
+  - ScoutTower
+  - BigCannon
+  - SmallCannon
+  - CannonTower
   layers:
   - Default
   - TransparentFX

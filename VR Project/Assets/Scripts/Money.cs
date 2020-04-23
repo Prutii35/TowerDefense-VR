@@ -4,5 +4,5 @@ using UnityEngine;
 
 public static class Money 
 {
-    public static float Amount = 120f;
+    public static float Amount = 500f;
 }
