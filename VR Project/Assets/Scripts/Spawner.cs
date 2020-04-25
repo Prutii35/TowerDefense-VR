@@ -32,6 +32,7 @@ public class Spawner : MonoBehaviour
 
     float extraSpeed = 0f;
     float extraHealth = 0f;
+    float extraScore = 0f;
 
     public string nextLvl = "level #";
 
@@ -218,10 +219,11 @@ public class Spawner : MonoBehaviour
             {
                 extraSpeed += 0.1f;
                 extraHealth += 3.5f;
-                Debug.Log("Upgraded stats.");
+                extraScore += 50f;
+                Debug.Log("Upgraded stats & score.");
             }
 
-            waveText.text = "Wave " + (currentWave + 1) + " / " + waves.Count;
+            waveText.text = "Wave " + (currentWave + 1);// + " / " + waves.Count;
 
             //start the wave and wait to finish
             yield return StartCoroutine(startNextWave());
@@ -264,6 +266,7 @@ public class Spawner : MonoBehaviour
 
             newEnemy.GetComponent<Enemy>().moveSpeed = newEnemy.GetComponent<Enemy>().moveSpeed + extraSpeed;
             newEnemy.GetComponent<Enemy>().health = newEnemy.GetComponent<Enemy>().health + extraHealth;
+            newEnemy.GetComponent<Enemy>().score = newEnemy.GetComponent<Enemy>().score + extraScore;
             newEnemy.SendMessage("setHealthBar");
 
             //Debug.Log("Health : " + newEnemy.GetComponent<Enemy>().health);
