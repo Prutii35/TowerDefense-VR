@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
 
     void Awake()
     {
-        
+        transform.Rotate(0f, 180f, 0f, Space.World);
     }
 
     void setHealthBar()
@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
     {
         //move enemy to waypoint
         transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, moveSpeed * Time.deltaTime);
+        
 
         //check for arive
         if(transform.position.Equals(currentWaypoint.position))

@@ -45,7 +45,21 @@ public class ThingToProtect : MonoBehaviour
         if(currentHealth <= 0)
         {
             Destroy(gameObject);
-            scoreText.text = "Score : " + Score.Amount;
+            float high = PlayerPrefs.GetFloat("High Score");
+
+
+            if (high > Score.Amount)
+            {
+                scoreText.text = "High Score : " + high + '\n' + '\n' + "You scored " + Score.Amount;
+                //You need this to save high score across game sessions
+                
+            }
+            else
+            {
+                scoreText.text = "New High Score : " + Score.Amount;
+                PlayerPrefs.SetFloat("High Score", Score.Amount);
+            }
+
             gameOverPanel.gameObject.SetActive(true);
             Time.timeScale = 0.0f;
         }

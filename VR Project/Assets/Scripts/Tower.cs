@@ -77,8 +77,8 @@ public class Tower : MonoBehaviour
             }
             else if(gameObject.tag == "BigCannon")
             {
-                x = Mathf.Sin(Mathf.Deg2Rad * angle) * (range + 5);
-                y = Mathf.Cos(Mathf.Deg2Rad * angle) * (range + 5);
+                x = Mathf.Sin(Mathf.Deg2Rad * angle) * (range + 4);
+                y = Mathf.Cos(Mathf.Deg2Rad * angle) * (range + 4);
             }
             else if (gameObject.tag == "SmallCannon")
             {
