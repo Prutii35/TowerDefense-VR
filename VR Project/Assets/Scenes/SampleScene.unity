@@ -23245,6 +23245,18 @@ MonoBehaviour:
     1 1
 
     1 1'
+--- !u!114 &505040457 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5517839312724967747, guid: 1f6113e4f28828246bd3221ee5c2a838,
+    type: 3}
+  m_PrefabInstance: {fileID: 4086116156665407676}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &511982934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481256, guid: be878d9ea17907f4a8068678a5ce7908,
@@ -52965,7 +52977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81471992c739c9478cb3af1eca22fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialWaitTime: 5
+  initialWaitTime: 10
   waveWaitTime: 5
   enemyPrefab:
   - {fileID: 8983394766977322545, guid: 0b17d72b232f72f40816881c555f03dd, type: 3}
@@ -52978,6 +52990,7 @@ MonoBehaviour:
   pathStart4: {fileID: 1846363697}
   pathStart5: {fileID: 1019188810}
   waveText: {fileID: 4086116156665407677}
+  getReadyText: {fileID: 505040457}
   nextLvl: 'level #'
 --- !u!4 &1182626269
 Transform:
@@ -92826,6 +92839,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -103
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517839312724967747, guid: 1f6113e4f28828246bd3221ee5c2a838,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -3.2230966
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517839312724967747, guid: 1f6113e4f28828246bd3221ee5c2a838,
+        type: 3}
+      propertyPath: m_margin.y
+      value: -2.548623
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517839312724967747, guid: 1f6113e4f28828246bd3221ee5c2a838,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -8.948228
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517839312724967747, guid: 1f6113e4f28828246bd3221ee5c2a838,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -7.8742714
       objectReference: {fileID: 0}
     - target: {fileID: 5706257683030379818, guid: 1f6113e4f28828246bd3221ee5c2a838,
         type: 3}

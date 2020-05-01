@@ -7,7 +7,7 @@ using TMPro;
 
 public class Spawner : MonoBehaviour
 {
-    public float initialWaitTime = 5f;
+    public float initialWaitTime = 10f;
     public float waveWaitTime = 5f;
 
     public GameObject[] enemyPrefab;
@@ -29,6 +29,7 @@ public class Spawner : MonoBehaviour
     int randomPath;
 
     public TextMeshPro waveText;
+    public TextMeshPro getReadyText;
 
     float extraSpeed = 0f;
     float extraHealth = 0f;
@@ -61,9 +62,11 @@ public class Spawner : MonoBehaviour
     IEnumerator WaveLoop()
     {
         // pause before we start for setup
+        getReadyText.text = "Get Ready - Game Starting...";
         yield return new WaitForSeconds(initialWaitTime);
 
         //loop  through each wave
+        getReadyText.text = "TOWER DEFENSE VR";
         while(currentWave < waves.Count)
         {
 

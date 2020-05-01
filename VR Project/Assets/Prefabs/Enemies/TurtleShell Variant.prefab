@@ -44,7 +44,7 @@ MonoBehaviour:
   health: 30
   healthBarPrefab: {fileID: 8785111895388094457, guid: 9ee7f4442ebe741449a71a74cf4f1f76,
     type: 3}
-  worth: 20
+  worth: 25
   score: 150
   currentWaypoint: {fileID: 0}
   moveSpeed: 1.5
